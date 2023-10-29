@@ -55,9 +55,9 @@ dependencies:
   cloud_firestore: ^4.9.0
   uuid: ^3.0.7
   firebase_auth: ^4.8.0
-  record: ^5.0.1
-  audioplayers: ^5.2.0
-  ffmpeg_kit_flutter:
+  sqflite: ^2.3.0
+  noise_meter: ^5.0.2
+  ffmpeg_kit_flutter: ^6.0.3
 
 
 
