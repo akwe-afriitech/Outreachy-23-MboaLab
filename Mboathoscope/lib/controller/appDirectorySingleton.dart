@@ -10,7 +10,7 @@ class AppDirectorySingleton with ChangeNotifier{
   static final AppDirectorySingleton _singleton = AppDirectorySingleton._internal();
   late Directory appDirectory; ///Directory for saving recordings
   static String heartBeatParentPath = 'heartsound'; ///Direct Directory name for where recordings are saved
-  late Map<String, PlayerController> heartbeatAndPathMap; ///Key and Value pair of Recordings and its corresponding path
+  late Map<dynamic, PlayerController> heartbeatAndPathMap; ///Key and Value pair of Recordings and its corresponding path
 
 
   factory AppDirectorySingleton() {

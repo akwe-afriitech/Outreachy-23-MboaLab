@@ -17,14 +17,15 @@ class RolePage extends StatelessWidget {
       backgroundColor: const Color(0xffF3F7FF),
       body: Column(
         children: [
-          const SizedBox(
-            height: 100,
+           SizedBox(
+            height: MediaQuery.of(context).size.height* 0.1,
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 26,right: 26, top: 87),
+            padding: EdgeInsets.all(5.0),
+            // padding: const EdgeInsets.only(left: 26,right: 26, top: 87),
             child: Image.asset(
               'assets/images/img_role.png',
-              height: 280,
+              height: MediaQuery.of(context).size.height* 0.58,
             ),
           ),
           const Padding(
@@ -39,19 +40,24 @@ class RolePage extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 35, right: 25, left: 25),
-            child: Row(
-              children: const [
-                 CustomButton(
-                  txt: 'Transmitter',
-                ),
-                 SizedBox(
-                  width: 50,
-                ),
-                 CustomButton(
-                  txt: ' Receiver  ',
-                )
-              ],
+            padding: const EdgeInsets.only(top: 35, right: 20, left: 20),
+            child: SizedBox(
+              width: MediaQuery.of(context).size.width* 0.9,
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                   CustomButton(
+                    txt: 'Transmitter',
+                  ),
+                   SizedBox(
+                    width:  MediaQuery.of(context).size.width* 0.2,
+                  ),
+                   CustomButton(
+                    txt: ' Receiver  ',
+                  )
+                ],
+              ),
             ),
           ),
           
@@ -59,7 +65,7 @@ class RolePage extends StatelessWidget {
             height: 20,
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 0, top: 40),
+            padding: const EdgeInsets.only(left: 0, top: 30),
             child: GestureDetector(
               onTap: (){
                 ///
